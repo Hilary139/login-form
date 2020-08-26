@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="login.css" type="text/css">
+      
+    <script src="https://kit.fontawesome.com/33583bc6a2.js" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+    
+   
+    </head>
+    
+   
+  
+ <body>
+     
+     
+      
+         <div class="login">
+             <img src="login%20face2.png">
+             <h1> LOGIN FORM</h1>
+             <form action="user.php">
+                 
+                 <input class="input-box" type="username" placeholder="USERNAME">
+                 <br>
+                  <br>
+                   <input class="input-box" type="password" placeholder="PASSWORD">
+                 
+                 
+                 <p> <span><input class="check" type="checkbox"> </span>I agree to the terms and conditions </p>
+                 
+                
+                 <button class="sign-btn" type="button"> sign up</button>  
+                 
+                 
+                 <hr>
+                 <p class="or">OR</p>
+                 
+                    <button class="signin-btn" type="button"> LOGIN WITH EMAIL</button>  
+                    
+                    <p> Do you have an account? <a href="#">Sign in</a></p>
+                 
+                         
+                                                  
+                                            
+                                   
+             </form>
+               </div>
+               
+               
+              <script>
+                  
+    $(document).ready(function(){
+        
+        $("input").focus(function(){
+      
+        $(this).css("background" , "red")
+             
+       });
+        
+        $("input").blur(function(){
+            $(this).css("background" , "white")
+        });
+        
+        $("input.check").change(function(){
+            alert("agreed");
+        })
+        
+    });
+    
+    
+    </script>
+    
+       
+         
+         
+     
+     
+     
+     
+     
+ </body>
